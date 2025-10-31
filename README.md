@@ -4,12 +4,12 @@ TaskMaster - Built with React + TypeScript + Vite
 
 ## Features
 
-- User Authentication & Onboarding
-- Task Creation & Management
-- Collaboration Tools (Comments/Tags)
-- Due Dates & Reminders
-- Analytics Dashboard
-- Integrations with Calendar & Third-party Apps
+- Task Creation and Editing
+- Collaborative Task Assignment
+- Due Date and Reminder Notifications
+- Priority Tagging and Filtering
+- Progress Tracking and Analytics
+- Real-Time Collaboration Tools (Comments/Attachments)
 
 ## Tech Stack
 
