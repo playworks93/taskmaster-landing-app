@@ -15,22 +15,22 @@ const Dashboard = (props: DashboardProps) => {
           Overview
         </button>
         <button 
-          className={activeTab === 'user_authentication_&_onboarding' ? 'active' : ''}
-          onClick={() => setActiveTab('user_authentication_&_onboarding')}
+          className={activeTab === 'task_creation_and_editing' ? 'active' : ''}
+          onClick={() => setActiveTab('task_creation_and_editing')}
         >
-          User Authentication & Onboarding
+          Task Creation And Editing
         </button>
         <button 
-          className={activeTab === 'task_creation_&_management' ? 'active' : ''}
-          onClick={() => setActiveTab('task_creation_&_management')}
+          className={activeTab === 'collaborative_task_assignment' ? 'active' : ''}
+          onClick={() => setActiveTab('collaborative_task_assignment')}
         >
-          Task Creation & Management
+          Collaborative Task Assignment
         </button>
         <button 
-          className={activeTab === 'collaboration_tools_(comments/tags)' ? 'active' : ''}
-          onClick={() => setActiveTab('collaboration_tools_(comments/tags)')}
+          className={activeTab === 'due_date_and_reminder_notifications' ? 'active' : ''}
+          onClick={() => setActiveTab('due_date_and_reminder_notifications')}
         >
-          Collaboration Tools (Comments/Tags)
+          Due Date And Reminder Notifications
         </button>
       </nav>
 
@@ -55,24 +55,24 @@ const Dashboard = (props: DashboardProps) => {
           </div>
         )}
 
-        {activeTab === 'user_authentication_&_onboarding' && (
+        {activeTab === 'task_creation_and_editing' && (
           <div className="tab-content">
-            <h2>User Authentication & Onboarding</h2>
-            <p>Manage your user authentication & onboarding here.</p>
+            <h2>Task Creation and Editing</h2>
+            <p>Manage your task creation and editing here.</p>
           </div>
         )}
 
-        {activeTab === 'task_creation_&_management' && (
+        {activeTab === 'collaborative_task_assignment' && (
           <div className="tab-content">
-            <h2>Task Creation & Management</h2>
-            <p>Manage your task creation & management here.</p>
+            <h2>Collaborative Task Assignment</h2>
+            <p>Manage your collaborative task assignment here.</p>
           </div>
         )}
 
-        {activeTab === 'collaboration_tools_(comments/tags)' && (
+        {activeTab === 'due_date_and_reminder_notifications' && (
           <div className="tab-content">
-            <h2>Collaboration Tools (Comments/Tags)</h2>
-            <p>Manage your collaboration tools (comments/tags) here.</p>
+            <h2>Due Date and Reminder Notifications</h2>
+            <p>Manage your due date and reminder notifications here.</p>
           </div>
         )}
       </div>
